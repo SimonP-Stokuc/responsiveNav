@@ -4,7 +4,7 @@ body {
 
 header {
     background-color: lightslategray;
-    padding: 0;
+    padding: 1vh;
 }
 
 nav {
@@ -13,13 +13,7 @@ nav {
     display: inline-block;
 }
 
-.title {
-    background-color: lightblue;
-    float: right;
-    padding: 0;
-}
-
-.navBtn {
+.navBtn, .navBtnFirstA {
     background-color: dimgrey;
     color: silver;
     padding-top: 2vh;
@@ -30,40 +24,72 @@ nav {
     display: inline-block;
 }
 
-.navBtn:hover {
-    background-color: darkgrey;
-    color: black;
+.subMenu {
+    text-decoration: none;
 }
 
-.pTit {
-    display: inline-block;
-    font-size: 1vw;
-    padding: 2vh;
-    margin: 1vh;
-    width: 20vh;
-    text-align: center;
-    float: right;
+.navBtn:hover, .navBtnFirstA:hover {
+    background-color: darkgrey;
+    color: black;
 }
 
 a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 800px) {
-    .title {
-        display: inline;
-        float: top;
+.fa-bars {
+    color: white;
+    font-size: 3vh;
+}
+
+.subMenuLi {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+    .navBtnFirstA {
+        display: inline-block;
     }
 
-    nav {
+    .navBtnFirstB {
+        display: none;
+    }
+
+    .subMenu {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .navBtnFirstA {
+        display: none;
+    }
+
+    .navBtnFirstB {
         display: inline;
     }
 
     .navBtn {
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        width: 100vw;
-        text-align: center;
-        display: inline;
+        display: none;
     }
+
+    .SubMenuBTN {
+        display: block;
+        background-color: white;
+        color: red;
+        padding: 2vh;
+    }
+
+    .subMenu:hover {
+        display: block;
+    }
+    .subMenu {
+        display: none;
+    }
+
 }
+.navBtnFirstB:hover + .subMenu{
+    display: block;
+}
+
