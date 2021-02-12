@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: lightslategray;
+    padding: 0;
+}
+
+nav {
+    background-color: gray;
+    margin: 1vh;
+    display: inline-block;
+}
+
+.title {
+    background-color: lightblue;
+    float: right;
+    padding: 0;
+}
+
+.navBtn {
+    background-color: dimgrey;
+    color: silver;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 15vw;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.navBtn:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+.pTit {
+    display: inline-block;
+    font-size: 1vw;
+    padding: 2vh;
+    margin: 1vh;
+    width: 20vh;
+    text-align: center;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .title {
+        display: inline;
+        float: top;
+    }
+
+    nav {
+        display: inline;
+    }
+
+    .navBtn {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        width: 100vw;
+        text-align: center;
+        display: inline;
+    }
+}
